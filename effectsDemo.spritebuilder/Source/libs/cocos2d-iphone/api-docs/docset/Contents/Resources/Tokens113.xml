@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/CCBAnimationManager+FrameAnimation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/CCBAnimationManager(FrameAnimation)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CCBAnimationManager+FrameAnimation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="113"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCBAnimationManager/addAnimationsWithDictionary:node:</TokenIdentifier>
+			<Abstract type="html">Add an animation from a NSDictionary.</Abstract>
+			<DeclaredIn>CCBAnimationManager+FrameAnimation.h</DeclaredIn>
+			
+			<Declaration>- (void)addAnimationsWithDictionary:(NSDictionary *)dictionary node:(CCNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">Dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnimationsWithDictionary:node:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCBAnimationManager/addAnimationsWithFile:node:</TokenIdentifier>
+			<Abstract type="html">Add an animation from a file.</Abstract>
+			<DeclaredIn>CCBAnimationManager+FrameAnimation.h</DeclaredIn>
+			
+			<Declaration>- (void)addAnimationsWithFile:(NSString *)plist node:(CCNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plist</Name>
+					<Abstract type="html">File path.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnimationsWithFile:node:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
