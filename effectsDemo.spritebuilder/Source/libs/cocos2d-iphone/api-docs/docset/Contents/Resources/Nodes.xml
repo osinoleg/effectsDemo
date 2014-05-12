@@ -122,29 +122,17 @@
 						<NodeRef refid="109"/>
 						<NodeRef refid="110"/>
 						<NodeRef refid="111"/>
-						<NodeRef refid="112"/>
 						
 					</Subnodes>
 				</Node>
 				
-				
-				<Node>
-					<Name>Categories</Name>
-					<Path>index.html</Path>
-					<Subnodes>
-						<NodeRef refid="113"/>
-						<NodeRef refid="114"/>
-						
-					</Subnodes>
-				</Node>
 				
                 
 				<Node>
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="115"/>
-						<NodeRef refid="116"/>
+						<NodeRef refid="112"/>
 						
 					</Subnodes>
 				</Node>
@@ -154,6 +142,10 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="113"/>
+						<NodeRef refid="114"/>
+						<NodeRef refid="115"/>
+						<NodeRef refid="116"/>
 						<NodeRef refid="117"/>
 						<NodeRef refid="118"/>
 						<NodeRef refid="119"/>
@@ -161,10 +153,6 @@
 						<NodeRef refid="121"/>
 						<NodeRef refid="122"/>
 						<NodeRef refid="123"/>
-						<NodeRef refid="124"/>
-						<NodeRef refid="125"/>
-						<NodeRef refid="126"/>
-						<NodeRef refid="127"/>
 						
 					</Subnodes>
 				</Node>
@@ -1617,39 +1605,6 @@
             
         </Node>
 		<Node id="67" type="file" documentType="reference">
-            <Name>CCBlendMode</Name>
-            <Path>Classes/CCBlendMode.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/CCBlendMode.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/CCBlendMode.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/CCBlendMode.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/CCBlendMode.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="68" type="file" documentType="reference">
             <Name>CCButton</Name>
             <Path>Classes/CCButton.html</Path>
             
@@ -1682,7 +1637,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="69" type="file" documentType="reference">
+		<Node id="68" type="file" documentType="reference">
             <Name>CCClippingNode</Name>
             <Path>Classes/CCClippingNode.html</Path>
             
@@ -1721,7 +1676,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="70" type="file" documentType="reference">
+		<Node id="69" type="file" documentType="reference">
             <Name>CCColor</Name>
             <Path>Classes/CCColor.html</Path>
             
@@ -1760,7 +1715,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="71" type="file" documentType="reference">
+		<Node id="70" type="file" documentType="reference">
             <Name>CCControl</Name>
             <Path>Classes/CCControl.html</Path>
             
@@ -1793,7 +1748,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="72" type="file" documentType="reference">
+		<Node id="71" type="file" documentType="reference">
             <Name>CCDirector</Name>
             <Path>Classes/CCDirector.html</Path>
             
@@ -1832,7 +1787,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="73" type="file" documentType="reference">
+		<Node id="72" type="file" documentType="reference">
             <Name>CCDrawNode</Name>
             <Path>Classes/CCDrawNode.html</Path>
             
@@ -1855,6 +1810,33 @@
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="73" type="file" documentType="reference">
+            <Name>CCEffectNode</Name>
+            <Path>Classes/CCEffectNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCEffectNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCEffectNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCEffectNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
                 
             </Subnodes>
             
@@ -2447,6 +2429,12 @@
                 </Node>
                 
                 
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
             </Subnodes>
             
         </Node>
@@ -2529,39 +2517,6 @@
             
         </Node>
 		<Node id="93" type="file" documentType="reference">
-            <Name>CCRenderState</Name>
-            <Path>Classes/CCRenderState.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/CCRenderState.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/CCRenderState.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/CCRenderState.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/CCRenderState.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="94" type="file" documentType="reference">
             <Name>CCRenderTexture</Name>
             <Path>Classes/CCRenderTexture.html</Path>
             
@@ -2600,7 +2555,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="95" type="file" documentType="reference">
+		<Node id="94" type="file" documentType="reference">
             <Name>CCRenderer</Name>
             <Path>Classes/CCRenderer.html</Path>
             
@@ -2639,7 +2594,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="96" type="file" documentType="reference">
+		<Node id="95" type="file" documentType="reference">
             <Name>CCResponder</Name>
             <Path>Classes/CCResponder.html</Path>
             
@@ -2672,7 +2627,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="97" type="file" documentType="reference">
+		<Node id="96" type="file" documentType="reference">
             <Name>CCScene</Name>
             <Path>Classes/CCScene.html</Path>
             
@@ -2699,12 +2654,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="98" type="file" documentType="reference">
+		<Node id="97" type="file" documentType="reference">
             <Name>CCShader</Name>
             <Path>Classes/CCShader.html</Path>
             
         </Node>
-		<Node id="99" type="file" documentType="reference">
+		<Node id="98" type="file" documentType="reference">
             <Name>CCSlider</Name>
             <Path>Classes/CCSlider.html</Path>
             
@@ -2737,7 +2692,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="100" type="file" documentType="reference">
+		<Node id="99" type="file" documentType="reference">
             <Name>CCSprite</Name>
             <Path>Classes/CCSprite.html</Path>
             
@@ -2776,7 +2731,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="101" type="file" documentType="reference">
+		<Node id="100" type="file" documentType="reference">
             <Name>CCSprite9Slice</Name>
             <Path>Classes/CCSprite9Slice.html</Path>
             
@@ -2803,7 +2758,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="102" type="file" documentType="reference">
+		<Node id="101" type="file" documentType="reference">
             <Name>CCSpriteBatchNode</Name>
             <Path>Classes/CCSpriteBatchNode.html</Path>
             
@@ -2836,7 +2791,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="103" type="file" documentType="reference">
+		<Node id="102" type="file" documentType="reference">
             <Name>CCSpriteFrame</Name>
             <Path>Classes/CCSpriteFrame.html</Path>
             
@@ -2875,7 +2830,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="104" type="file" documentType="reference">
+		<Node id="103" type="file" documentType="reference">
             <Name>CCTextField</Name>
             <Path>Classes/CCTextField.html</Path>
             
@@ -2914,7 +2869,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="105" type="file" documentType="reference">
+		<Node id="104" type="file" documentType="reference">
             <Name>CCTexture</Name>
             <Path>Classes/CCTexture.html</Path>
             
@@ -2953,7 +2908,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="106" type="file" documentType="reference">
+		<Node id="105" type="file" documentType="reference">
             <Name>CCTiledMap</Name>
             <Path>Classes/CCTiledMap.html</Path>
             
@@ -2992,7 +2947,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="107" type="file" documentType="reference">
+		<Node id="106" type="file" documentType="reference">
             <Name>CCTiledMapInfo</Name>
             <Path>Classes/CCTiledMapInfo.html</Path>
             
@@ -3031,7 +2986,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="108" type="file" documentType="reference">
+		<Node id="107" type="file" documentType="reference">
             <Name>CCTiledMapLayer</Name>
             <Path>Classes/CCTiledMapLayer.html</Path>
             
@@ -3070,7 +3025,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="109" type="file" documentType="reference">
+		<Node id="108" type="file" documentType="reference">
             <Name>CCTiledMapLayerInfo</Name>
             <Path>Classes/CCTiledMapLayerInfo.html</Path>
             
@@ -3097,7 +3052,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="110" type="file" documentType="reference">
+		<Node id="109" type="file" documentType="reference">
             <Name>CCTiledMapObjectGroup</Name>
             <Path>Classes/CCTiledMapObjectGroup.html</Path>
             
@@ -3130,7 +3085,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="111" type="file" documentType="reference">
+		<Node id="110" type="file" documentType="reference">
             <Name>CCTiledMapTilesetInfo</Name>
             <Path>Classes/CCTiledMapTilesetInfo.html</Path>
             
@@ -3163,7 +3118,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="112" type="file" documentType="reference">
+		<Node id="111" type="file" documentType="reference">
             <Name>CCTransition</Name>
             <Path>Classes/CCTransition.html</Path>
             
@@ -3197,40 +3152,8 @@
             
         </Node>
 		
-		<Node id="113" type="file" documentType="reference">
-            <Name>CCBAnimationManager(FrameAnimation)</Name>
-            <Path>Categories/CCBAnimationManager+FrameAnimation.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Categories/CCBAnimationManager+FrameAnimation.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Categories/CCBAnimationManager+FrameAnimation.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Categories/CCBAnimationManager+FrameAnimation.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="114" type="file" documentType="reference">
-            <Name>NSValue(CCRenderer)</Name>
-            <Path>Categories/NSValue+CCRenderer.html</Path>
-            
-        </Node>
 		
-        <Node id="115" type="file" documentType="reference">
+        <Node id="112" type="file" documentType="reference">
             <Name>CCPhysicsCollisionDelegate</Name>
             <Path>Protocols/CCPhysicsCollisionDelegate.html</Path>
             
@@ -3257,85 +3180,58 @@
             </Subnodes>
             
         </Node>
-		<Node id="116" type="file" documentType="reference">
-            <Name>CCRenderCommand</Name>
-            <Path>Protocols/CCRenderCommand.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Protocols/CCRenderCommand.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Protocols/CCRenderCommand.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Protocols/CCRenderCommand.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
 		
-        <Node id="117" type="file" documentType="reference">
+        <Node id="113" type="file" documentType="reference">
             <Name>CCControlState</Name>
             <Path>Constants/CCControlState.html</Path>
             
         </Node>
-		<Node id="118" type="file" documentType="reference">
+		<Node id="114" type="file" documentType="reference">
             <Name>CCDirectorProjection</Name>
             <Path>Constants/CCDirectorProjection.html</Path>
             
         </Node>
-		<Node id="119" type="file" documentType="reference">
+		<Node id="115" type="file" documentType="reference">
             <Name>CCLayoutBoxDirection</Name>
             <Path>Constants/CCLayoutBoxDirection.html</Path>
             
         </Node>
-		<Node id="120" type="file" documentType="reference">
+		<Node id="116" type="file" documentType="reference">
             <Name>CCParticleSystemMode</Name>
             <Path>Constants/CCParticleSystemMode.html</Path>
             
         </Node>
-		<Node id="121" type="file" documentType="reference">
+		<Node id="117" type="file" documentType="reference">
             <Name>CCParticleSystemPositionType</Name>
             <Path>Constants/CCParticleSystemPositionType.html</Path>
             
         </Node>
-		<Node id="122" type="file" documentType="reference">
+		<Node id="118" type="file" documentType="reference">
             <Name>CCPhysicsBodyType</Name>
             <Path>Constants/CCPhysicsBodyType.html</Path>
             
         </Node>
-		<Node id="123" type="file" documentType="reference">
+		<Node id="119" type="file" documentType="reference">
             <Name>CCProgressNodeType</Name>
             <Path>Constants/CCProgressNodeType.html</Path>
             
         </Node>
-		<Node id="124" type="file" documentType="reference">
+		<Node id="120" type="file" documentType="reference">
             <Name>CCRenderTextureImageFormat</Name>
             <Path>Constants/CCRenderTextureImageFormat.html</Path>
             
         </Node>
-		<Node id="125" type="file" documentType="reference">
+		<Node id="121" type="file" documentType="reference">
             <Name>CCTexturePixelFormat</Name>
             <Path>Constants/CCTexturePixelFormat.html</Path>
             
         </Node>
-		<Node id="126" type="file" documentType="reference">
+		<Node id="122" type="file" documentType="reference">
             <Name>CCTiledMapOrientation</Name>
             <Path>Constants/CCTiledMapOrientation.html</Path>
             
         </Node>
-		<Node id="127" type="file" documentType="reference">
+		<Node id="123" type="file" documentType="reference">
             <Name>CCTransitionDirection</Name>
             <Path>Constants/CCTransitionDirection.html</Path>
             

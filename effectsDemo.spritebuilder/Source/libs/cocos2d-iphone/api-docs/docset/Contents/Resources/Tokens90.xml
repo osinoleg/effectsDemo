@@ -580,6 +580,168 @@ The default is nil.</Abstract>
             <NodeRef refid="90"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setShape:</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk shape object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkShape *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/shape</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk shape object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkShape *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/shape</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk shape object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkShape *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setNext:</TokenIdentifier>
+			<Abstract type="html">Next shape in the linked list.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsShape *next</Declaration>
+			
+			
+			<Anchor>//api/name/next</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/next</TokenIdentifier>
+			<Abstract type="html">Next shape in the linked list.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsShape *next</Declaration>
+			
+			
+			<Anchor>//api/name/next</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/next</TokenIdentifier>
+			<Abstract type="html">Next shape in the linked list.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsShape *next</Declaration>
+			
+			
+			<Anchor>//api/name/next</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setBody:</TokenIdentifier>
+			<Abstract type="html">Body this shape is attached to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CCPhysicsBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/body</TokenIdentifier>
+			<Abstract type="html">Body this shape is attached to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CCPhysicsBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/body</TokenIdentifier>
+			<Abstract type="html">Body this shape is attached to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CCPhysicsBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/willAddToPhysicsNode:nonRigidTransform:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)willAddToPhysicsNode:(CCPhysicsNode *)physics nonRigidTransform:(cpTransform)transform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter><Parameter>
+					<Name>transform</Name>
+					<Abstract type="html">Transform to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willAddToPhysicsNode:nonRigidTransform:</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/didRemoveFromPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)didRemoveFromPhysicsNode:(CCPhysicsNode *)physics</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didRemoveFromPhysicsNode:</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/rescaleShape:</TokenIdentifier>
+			<Abstract type="html">TODO:</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)rescaleShape:(cpTransform)transform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transform</Name>
+					<Abstract type="html">Non riged transform.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rescaleShape:</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

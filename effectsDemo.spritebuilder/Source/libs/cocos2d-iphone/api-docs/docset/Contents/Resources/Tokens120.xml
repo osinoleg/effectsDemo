@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CCParticleSystemMode.html">
+	<File path="Constants/CCRenderTextureImageFormat.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CCParticleSystemMode</TokenIdentifier>
-			<Abstract type="html">Particle system mode.</Abstract>
-			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CCRenderTextureImageFormat</TokenIdentifier>
+			<Abstract type="html">Image format when saving render textures</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
             
 			
 			<NodeRef refid="120"/>
@@ -14,21 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemModeGravity</TokenIdentifier>
-            <Abstract type="html">Gravity mode (A mode).</Abstract>
-            <Declaration>CCParticleSystemModeGravity</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCRenderTextureImageFormatJPEG</TokenIdentifier>
+            <Abstract type="html">Image will be saved as JPEG</Abstract>
+            <Declaration>CCRenderTextureImageFormatJPEG</Declaration>
             
-            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            <DeclaredIn>CCRenderTexture.h</DeclaredIn>
             
             <NodeRef refid="120"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemModeRadius</TokenIdentifier>
-            <Abstract type="html">Radius mode (B mode).</Abstract>
-            <Declaration>CCParticleSystemModeRadius</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCRenderTextureImageFormatPNG</TokenIdentifier>
+            <Abstract type="html">Image will be saved as PNG</Abstract>
+            <Declaration>CCRenderTextureImageFormatPNG</Declaration>
             
-            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            <DeclaredIn>CCRenderTexture.h</DeclaredIn>
             
             <NodeRef refid="120"/>
         </Token>

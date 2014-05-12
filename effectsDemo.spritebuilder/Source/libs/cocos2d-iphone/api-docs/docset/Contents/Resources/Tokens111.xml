@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CCTiledMapTilesetInfo.html">
+	<File path="Classes/CCTransition.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMapTilesetInfo</TokenIdentifier>
-			<Abstract type="html">CCTiledMapTilesetInfo contains information about the Tile Map&apos;s Tileset. This information is obtained from the supplied Tile Map File (TMX).</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTransition</TokenIdentifier>
+			<Abstract type="html">Creates a transition.
+The transition will replace the outgoing scene, with the incoming scene.
+Both scenes can be animated during the transition ( default disabled ).</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
             
 			
 			<NodeRef refid="111"/>
@@ -13,343 +15,470 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setName:</TokenIdentifier>
-			<Abstract type="html">Tileset name.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setOutgoingDownScale:</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/outgoingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/name</TokenIdentifier>
-			<Abstract type="html">Tileset name.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/outgoingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/outgoingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/name</TokenIdentifier>
-			<Abstract type="html">Tileset name.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/outgoingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/outgoingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setFirstGid:</TokenIdentifier>
-			<Abstract type="html">First GID.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setIncomingDownScale:</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/firstGid</Anchor>
+			<Anchor>//api/name/incomingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/firstGid</TokenIdentifier>
-			<Abstract type="html">First GID.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/incomingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/firstGid</Anchor>
+			<Anchor>//api/name/incomingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/firstGid</TokenIdentifier>
-			<Abstract type="html">First GID.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/incomingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
 			
 			
-			<Anchor>//api/name/firstGid</Anchor>
+			<Anchor>//api/name/incomingDownScale</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileSize:</TokenIdentifier>
-			<Abstract type="html">Tileset size.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setRetinaTransition:</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
 			
 			
-			<Anchor>//api/name/tileSize</Anchor>
+			<Anchor>//api/name/retinaTransition</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileSize</TokenIdentifier>
-			<Abstract type="html">Tileset size.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isRetinaTransition</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
 			
 			
-			<Anchor>//api/name/tileSize</Anchor>
+			<Anchor>//api/name/retinaTransition</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileSize</TokenIdentifier>
-			<Abstract type="html">Tileset size.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/retinaTransition</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
 			
 			
-			<Anchor>//api/name/tileSize</Anchor>
+			<Anchor>//api/name/retinaTransition</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setSpacing:</TokenIdentifier>
-			<Abstract type="html">Tileset spacing.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setTransitionPixelFormat:</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
 			
 			
-			<Anchor>//api/name/spacing</Anchor>
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/spacing</TokenIdentifier>
-			<Abstract type="html">Tileset spacing.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/transitionPixelFormat</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
 			
 			
-			<Anchor>//api/name/spacing</Anchor>
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/spacing</TokenIdentifier>
-			<Abstract type="html">Tileset spacing.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/transitionPixelFormat</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
 			
 			
-			<Anchor>//api/name/spacing</Anchor>
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setMargin:</TokenIdentifier>
-			<Abstract type="html">Tileset margin.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setTransitionDepthStencilFormat:</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/margin</TokenIdentifier>
-			<Abstract type="html">Tileset margin.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/transitionDepthStencilFormat</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/margin</TokenIdentifier>
-			<Abstract type="html">Tileset margin.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/transitionDepthStencilFormat</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setSourceImage:</TokenIdentifier>
-			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setOutgoingSceneAnimated:</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/sourceImage</Anchor>
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/sourceImage</TokenIdentifier>
-			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isOutgoingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/sourceImage</Anchor>
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/sourceImage</TokenIdentifier>
-			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/outgoingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/sourceImage</Anchor>
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setImageSize:</TokenIdentifier>
-			<Abstract type="html">Size of image in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setIncomingSceneAnimated:</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/imageSize</Anchor>
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/imageSize</TokenIdentifier>
-			<Abstract type="html">Size of image in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isIncomingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/imageSize</Anchor>
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/imageSize</TokenIdentifier>
-			<Abstract type="html">Size of image in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/incomingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/imageSize</Anchor>
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileOffset:</TokenIdentifier>
-			<Abstract type="html">Tileset offset in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setRunTime:</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
 			
 			
-			<Anchor>//api/name/tileOffset</Anchor>
+			<Anchor>//api/name/runTime</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileOffset</TokenIdentifier>
-			<Abstract type="html">Tileset offset in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/runTime</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
 			
 			
-			<Anchor>//api/name/tileOffset</Anchor>
+			<Anchor>//api/name/runTime</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileOffset</TokenIdentifier>
-			<Abstract type="html">Tileset offset in pixels.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/runTime</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
 			
 			
-			<Anchor>//api/name/tileOffset</Anchor>
+			<Anchor>//api/name/runTime</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileAnchorPoint:</TokenIdentifier>
-			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setProgress:</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
 			
 			
-			<Anchor>//api/name/tileAnchorPoint</Anchor>
+			<Anchor>//api/name/progress</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileAnchorPoint</TokenIdentifier>
-			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/progress</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
 			
 			
-			<Anchor>//api/name/tileAnchorPoint</Anchor>
+			<Anchor>//api/name/progress</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileAnchorPoint</TokenIdentifier>
-			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/progress</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
 			
 			
-			<Anchor>//api/name/tileAnchorPoint</Anchor>
+			<Anchor>//api/name/progress</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/rectForGID:</TokenIdentifier>
-			<Abstract type="html">Return rectange for GID value.</Abstract>
-			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionCrossFadeWithDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a cross fade transition directly from outgoing to incoming scene.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
 			
-			<Declaration>- (CGRect)rectForGID:(unsigned int)gid</Declaration>
+			<Declaration>+ (CCTransition *)transitionCrossFadeWithDuration:(NSTimeInterval)duration</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>gid</Name>
-					<Abstract type="html">GID value to use.</Abstract>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">CGRect.</Abstract></ReturnValue>
-			<Anchor>//api/name/rectForGID:</Anchor>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionCrossFadeWithDuration:</Anchor>
+            <NodeRef refid="111"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionFadeWithColor:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a fade transition from outgoing to incoming scene, through color.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionFadeWithColor:(CCColor *)color duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">The color to fade through</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionFadeWithColor:duration:</Anchor>
+            <NodeRef refid="111"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionFadeWithDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a fade transition from outgoing to incoming scene, through black.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionFadeWithDuration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionFadeWithDuration:</Anchor>
+            <NodeRef refid="111"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionMoveInWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene is moved in over the outgoing scene.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionMoveInWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to move the incoming scene.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionMoveInWithDirection:duration:</Anchor>
+            <NodeRef refid="111"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionPushWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene pushed the outgoing scene out.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionPushWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to move incoming and outgoing scenes.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionPushWithDirection:duration:</Anchor>
+            <NodeRef refid="111"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionRevealWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene is revealed by sliding the outgoing scene out.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionRevealWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to slide outcoing scene.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionRevealWithDirection:duration:</Anchor>
             <NodeRef refid="111"/>
 		</Token>
 		

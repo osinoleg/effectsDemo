@@ -400,6 +400,129 @@ To avoid problems with solver accuracy, make sure that this value is lower than 
             <NodeRef refid="88"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/setConstraint:</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkConstraint *constraint</Declaration>
+			
+			
+			<Anchor>//api/name/constraint</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/constraint</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkConstraint *constraint</Declaration>
+			
+			
+			<Anchor>//api/name/constraint</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsJoint/constraint</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkConstraint *constraint</Declaration>
+			
+			
+			<Anchor>//api/name/constraint</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/setIsRunning:</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/isRunning</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsJoint/isRunning</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/tryAddToPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Add the join to the physics node, but only if both connected bodies are running.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)tryAddToPhysicsNode:(CCPhysicsNode *)physicsNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physicsNode</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tryAddToPhysicsNode:</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/tryRemoveFromPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Remove the joint from the physics node, but only if the joint is added.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)tryRemoveFromPhysicsNode:(CCPhysicsNode *)physicsNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physicsNode</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tryRemoveFromPhysicsNode:</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsJoint/willAddToPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)willAddToPhysicsNode:(CCPhysicsNode *)physics</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willAddToPhysicsNode:</Anchor>
+            <NodeRef refid="88"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

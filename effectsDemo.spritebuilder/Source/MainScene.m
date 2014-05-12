@@ -8,14 +8,34 @@
 
 #import "MainScene.h"
 #import "CCDirector.h"
+#import  "CCEffectNode.h"
 
-@implementation MainScene
+@implementation MainScene {
+    CCSprite* _dirtPlatform;
+    CCEffectNode* _brightnessEffectNode;
+    CCEffectNode* _glowEffectNode;
+    CCTime _bloomTimer;
+    BOOL _blurAdding;
+    BOOL _blurSubtracting;
+    
+    CCSprite* _test;
+    CCEffectNode* _testNode;
+    
+    CCNode* _testNode2;
+    CCSprite* _test2;
+    
+    CCEffectGlow* _glowEffect;
+}
 
 
+//#define ENABLE_PULSE_BLOOM
 #define ENABLE_BLOOM
 
 - (void) didLoadFromCCB
 {
+    self.userInteractionEnabled = YES;
+    _blurAdding = YES;
+    
     // Ground (no bloom)
     CCSprite* ground = [CCSprite spriteWithImageNamed:@"ccbResources/lens_grass_2.png"];
     ground.anchorPoint = ccp(0.0, 0.0);
@@ -82,17 +102,17 @@
     
     // sky
     
-    CCSprite* dirtPlatform = [CCSprite spriteWithImageNamed:@"ccbResources/floating_platform_dirt_03.png"];
-    dirtPlatform.anchorPoint = ccp(0.0, 0.0);
-    dirtPlatform.position = ccp(0.1, 0.7);
-    dirtPlatform.positionType = CCPositionTypeNormalized;
+    _dirtPlatform = [CCSprite spriteWithImageNamed:@"ccbResources/floating_platform_dirt_03.png"];
+    _dirtPlatform.anchorPoint = ccp(0.0, 0.0);
+    _dirtPlatform.position = ccp(0.1, 0.7);
+    _dirtPlatform.positionType = CCPositionTypeNormalized;
 
     CCSprite* stalagmite = [CCSprite spriteWithImageNamed:@"ccbResources/stalagmite_1.png"];
     stalagmite.anchorPoint = ccp(0.0, 0.0);
     stalagmite.position = ccp(0.25, 0.53);
     stalagmite.positionType = CCPositionTypeNormalized;
     stalagmite.scale = 0.5;
-    [dirtPlatform addChild:stalagmite];
+    [_dirtPlatform addChild:stalagmite];
     
     CCSprite* grassPlatform = [CCSprite spriteWithImageNamed:@"ccbResources/floating_platform_grass_02.png"];
     grassPlatform.anchorPoint = ccp(0.0, 0.0);
@@ -127,26 +147,28 @@
 #ifdef ENABLE_BLOOM
     CGSize size = [[CCDirector sharedDirector] designSize];
     // Blend glow maps test
-    CCEffectNode* glowEffectNode = [[CCEffectNode alloc] initWithWidth:size.width height:size.height];
-    [glowEffectNode addChild:tree];
-    [glowEffectNode addChild:bush];
-    [glowEffectNode addChild:bush2];
-    [glowEffectNode addChild:tree2];
-    [glowEffectNode addChild:grass];
-    [glowEffectNode addChild:tree3];
-    [glowEffectNode addChild:grass2];
-    [glowEffectNode addChild:bush3];
+    _glowEffectNode = [[CCEffectNode alloc] initWithWidth:size.width height:size.height];
+    [_glowEffectNode addChild:tree];
+    [_glowEffectNode addChild:bush];
+    [_glowEffectNode addChild:bush2];
+    [_glowEffectNode addChild:tree2];
+    [_glowEffectNode addChild:grass];
+    [_glowEffectNode addChild:tree3];
+    [_glowEffectNode addChild:grass2];
+    [_glowEffectNode addChild:bush3];
     
     // sky
-    [glowEffectNode addChild:dirtPlatform];
-    [glowEffectNode addChild:grassPlatform];
-    [glowEffectNode addChild:grassPlatform2];
-    [glowEffectNode addChild:rainbow];
+    [_glowEffectNode addChild:_dirtPlatform];
+    [_glowEffectNode addChild:grassPlatform];
+    [_glowEffectNode addChild:grassPlatform2];
+    [_glowEffectNode addChild:rainbow];
     
-    CCEffectGlow* glowEffect = [CCEffectGlow effectWithRadius:0.002f];
-    glowEffectNode.effect = glowEffect;
+    _glowEffect = [CCEffectGlow effectWithBlurStrength:0.001f];
+    [_glowEffectNode addEffect:_glowEffect];
+    _glowEffectNode.positionType = CCPositionTypeNormalized;
+    _glowEffectNode.position = ccp(0.5, 0.5);
 
-    [self addChild:glowEffectNode];
+    [self addChild:_glowEffectNode];
 #else
     [self addChild:tree];
     [self addChild:bush];
@@ -158,11 +180,83 @@
     [self addChild:bush3];
     
     // sky
-    [self addChild:dirtPlatform];
+    [self addChild:_dirtPlatform];
     [self addChild:grassPlatform];
     [self addChild:grassPlatform2];
     [self addChild:rainbow];
 #endif
+    
+ 
+    [_dirtPlatform runAction:[CCActionRepeatForever actionWithAction:[CCActionSequence actions:
+                                                                       [CCActionMoveTo actionWithDuration:2.0 position:ccp(_dirtPlatform.position.x, _dirtPlatform.position.y + 0.005)],
+                                                                       [CCActionMoveTo actionWithDuration:2.0 position:ccp(_dirtPlatform.position.x, _dirtPlatform.position.y - 0.005)],
+                                                                       nil
+                                                                       ]]];
+    
+    [grassPlatform runAction:[CCActionRepeatForever actionWithAction:[CCActionSequence actions:
+                                                                     [CCActionMoveTo actionWithDuration:2.0 position:ccp(grassPlatform.position.x, grassPlatform.position.y - 0.005)],
+                                                                     [CCActionMoveTo actionWithDuration:2.0 position:ccp(grassPlatform.position.x, grassPlatform.position.y + 0.005)],
+                                                                     nil
+                                                                     ]]];
+
+    [grassPlatform2 runAction:[CCActionRepeatForever actionWithAction:[CCActionSequence actions:
+                                                                      [CCActionMoveTo actionWithDuration:2.0 position:ccp(grassPlatform2.position.x, grassPlatform2.position.y + 0.005)],
+                                                                      [CCActionMoveTo actionWithDuration:2.0 position:ccp(grassPlatform2.position.x, grassPlatform2.position.y - 0.005)],
+                                                                      nil
+                                                                      ]]];
+    
+    [self schedule:@selector(sceneUpdate:) interval:1.0f/60.0f];
+
+}
+
+- (void)sceneUpdate:(CCTime)interval
+{
+#ifdef ENABLE_PULSE_BLOOM
+    _bloomTimer += interval;
+    
+    if(_blurAdding)
+    {
+        _glowEffect.blurStrength += 0.002f * interval;
+        if(_bloomTimer >= 1.0f)
+        {
+            _bloomTimer = 0.0f;
+            _blurAdding = NO;
+            _blurSubtracting = YES;
+        }
+        
+    }
+    if(_blurSubtracting)
+    {
+        _glowEffect.blurStrength -= 0.002f * interval;
+        if(_bloomTimer >= 1.0f)
+        {
+            _bloomTimer = 0.0f;
+            _blurAdding = YES;
+            _blurSubtracting = NO;
+        }
+    }
+#endif
+}
+
+#pragma mark touches
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    // pseudo
+    /*
+    CGPoint location = [touch locationInNode:node];
+    CGRect box = node.sprite.boundingBox;
+
+    if(CGRectContainsPoint(box, location))
+    {
+
+    }
+     */
+}
+
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    
 }
 
 

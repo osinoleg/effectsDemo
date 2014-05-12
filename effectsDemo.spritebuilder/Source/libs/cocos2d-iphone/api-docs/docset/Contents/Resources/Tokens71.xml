@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CCControl.html">
+	<File path="Classes/CCDirector.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CCControl</TokenIdentifier>
-			<Abstract type="html">CCControl is the abstract base class of the Cocos2d components that handles touches or mouse events. You cannot instantiate it directly, instead use one of its sub-classes, such as CCButton. If you need to create a new sort of component you should make a sub-class of this class.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CCDirector</TokenIdentifier>
+			<Abstract type="html">Class that creates and handle the main Window and manages how
+and when to execute the Scenes.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
             
 			
 			<NodeRef refid="71"/>
@@ -13,698 +14,989 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setPreferredSize:</TokenIdentifier>
-			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setRunningThread:</TokenIdentifier>
+			<Abstract type="html">returns the cocos2d thread.
+If you want to run any cocos2d task, run it in this thread.
+Typically this is the main thread.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly, nonatomic) NSThread *runningThread</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSize</Anchor>
+			<Anchor>//api/name/runningThread</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/preferredSize</TokenIdentifier>
-			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/runningThread</TokenIdentifier>
+			<Abstract type="html">returns the cocos2d thread.
+If you want to run any cocos2d task, run it in this thread.
+Typically this is the main thread.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly, nonatomic) NSThread *runningThread</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSize</Anchor>
+			<Anchor>//api/name/runningThread</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/preferredSize</TokenIdentifier>
-			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/runningThread</TokenIdentifier>
+			<Abstract type="html">returns the cocos2d thread.
+If you want to run any cocos2d task, run it in this thread.
+Typically this is the main thread.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly, nonatomic) NSThread *runningThread</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSize</Anchor>
+			<Anchor>//api/name/runningThread</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setPreferredSizeType:</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setRunningScene:</TokenIdentifier>
+			<Abstract type="html">The current running Scene. Director can only run one Scene at the time</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCScene *runningScene</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSizeType</Anchor>
+			<Anchor>//api/name/runningScene</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/preferredSizeType</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/runningScene</TokenIdentifier>
+			<Abstract type="html">The current running Scene. Director can only run one Scene at the time</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCScene *runningScene</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSizeType</Anchor>
+			<Anchor>//api/name/runningScene</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/preferredSizeType</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/runningScene</TokenIdentifier>
+			<Abstract type="html">The current running Scene. Director can only run one Scene at the time</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCScene *runningScene</Declaration>
 			
 			
-			<Anchor>//api/name/preferredSizeType</Anchor>
+			<Anchor>//api/name/runningScene</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setMaxSize:</TokenIdentifier>
-			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setAnimationInterval:</TokenIdentifier>
+			<Abstract type="html">The FPS value</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) CCTime animationInterval</Declaration>
 			
 			
-			<Anchor>//api/name/maxSize</Anchor>
+			<Anchor>//api/name/animationInterval</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/maxSize</TokenIdentifier>
-			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/animationInterval</TokenIdentifier>
+			<Abstract type="html">The FPS value</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) CCTime animationInterval</Declaration>
 			
 			
-			<Anchor>//api/name/maxSize</Anchor>
+			<Anchor>//api/name/animationInterval</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/maxSize</TokenIdentifier>
-			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/animationInterval</TokenIdentifier>
+			<Abstract type="html">The FPS value</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) CCTime animationInterval</Declaration>
 			
 			
-			<Anchor>//api/name/maxSize</Anchor>
+			<Anchor>//api/name/animationInterval</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setMaxSizeType:</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setDisplayStats:</TokenIdentifier>
+			<Abstract type="html">Whether or not to display director statistics</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL displayStats</Declaration>
 			
 			
-			<Anchor>//api/name/maxSizeType</Anchor>
+			<Anchor>//api/name/displayStats</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/maxSizeType</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/displayStats</TokenIdentifier>
+			<Abstract type="html">Whether or not to display director statistics</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL displayStats</Declaration>
 			
 			
-			<Anchor>//api/name/maxSizeType</Anchor>
+			<Anchor>//api/name/displayStats</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/maxSizeType</TokenIdentifier>
-			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/displayStats</TokenIdentifier>
+			<Abstract type="html">Whether or not to display director statistics</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL displayStats</Declaration>
 			
 			
-			<Anchor>//api/name/maxSizeType</Anchor>
+			<Anchor>//api/name/displayStats</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setState:</TokenIdentifier>
-			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setNextDeltaTimeZero:</TokenIdentifier>
+			<Abstract type="html">whether or not the next delta time will be zero</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isNextDeltaTimeZero) BOOL nextDeltaTimeZero</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/nextDeltaTimeZero</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/state</TokenIdentifier>
-			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/isNextDeltaTimeZero</TokenIdentifier>
+			<Abstract type="html">whether or not the next delta time will be zero</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isNextDeltaTimeZero) BOOL nextDeltaTimeZero</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/nextDeltaTimeZero</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/state</TokenIdentifier>
-			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/nextDeltaTimeZero</TokenIdentifier>
+			<Abstract type="html">whether or not the next delta time will be zero</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isNextDeltaTimeZero) BOOL nextDeltaTimeZero</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/nextDeltaTimeZero</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setEnabled:</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setPaused:</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is paused</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isPaused) BOOL paused</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/paused</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/enabled</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/isPaused</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is paused</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isPaused) BOOL paused</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/paused</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/enabled</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/paused</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is paused</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isPaused) BOOL paused</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/paused</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setSelected:</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setAnimating:</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is active (animating)</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isAnimating) BOOL animating</Declaration>
 			
 			
-			<Anchor>//api/name/selected</Anchor>
+			<Anchor>//api/name/animating</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/selected</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/isAnimating</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is active (animating)</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isAnimating) BOOL animating</Declaration>
 			
 			
-			<Anchor>//api/name/selected</Anchor>
+			<Anchor>//api/name/animating</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/selected</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/animating</TokenIdentifier>
+			<Abstract type="html">Whether or not the Director is active (animating)</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isAnimating) BOOL animating</Declaration>
 			
 			
-			<Anchor>//api/name/selected</Anchor>
+			<Anchor>//api/name/animating</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setHighlighted:</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setProjection:</TokenIdentifier>
+			<Abstract type="html">Sets an OpenGL projection</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			<Declaration>@property (nonatomic, readwrite) CCDirectorProjection projection</Declaration>
 			
 			
-			<Anchor>//api/name/highlighted</Anchor>
+			<Anchor>//api/name/projection</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/highlighted</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/projection</TokenIdentifier>
+			<Abstract type="html">Sets an OpenGL projection</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			<Declaration>@property (nonatomic, readwrite) CCDirectorProjection projection</Declaration>
 			
 			
-			<Anchor>//api/name/highlighted</Anchor>
+			<Anchor>//api/name/projection</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/highlighted</TokenIdentifier>
-			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/projection</TokenIdentifier>
+			<Abstract type="html">Sets an OpenGL projection</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			<Declaration>@property (nonatomic, readwrite) CCDirectorProjection projection</Declaration>
 			
 			
-			<Anchor>//api/name/highlighted</Anchor>
+			<Anchor>//api/name/projection</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setContinuous:</TokenIdentifier>
-			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setTotalFrames:</TokenIdentifier>
+			<Abstract type="html">How many frames were called since the director started</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalFrames</Declaration>
 			
 			
-			<Anchor>//api/name/continuous</Anchor>
+			<Anchor>//api/name/totalFrames</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/continuous</TokenIdentifier>
-			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/totalFrames</TokenIdentifier>
+			<Abstract type="html">How many frames were called since the director started</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalFrames</Declaration>
 			
 			
-			<Anchor>//api/name/continuous</Anchor>
+			<Anchor>//api/name/totalFrames</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/continuous</TokenIdentifier>
-			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/totalFrames</TokenIdentifier>
+			<Abstract type="html">How many frames were called since the director started</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalFrames</Declaration>
 			
 			
-			<Anchor>//api/name/continuous</Anchor>
+			<Anchor>//api/name/totalFrames</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTracking:</TokenIdentifier>
-			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setSecondsPerFrame:</TokenIdentifier>
+			<Abstract type="html">seconds per frame</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCTime secondsPerFrame</Declaration>
 			
 			
-			<Anchor>//api/name/tracking</Anchor>
+			<Anchor>//api/name/secondsPerFrame</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/tracking</TokenIdentifier>
-			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/secondsPerFrame</TokenIdentifier>
+			<Abstract type="html">seconds per frame</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCTime secondsPerFrame</Declaration>
 			
 			
-			<Anchor>//api/name/tracking</Anchor>
+			<Anchor>//api/name/secondsPerFrame</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/tracking</TokenIdentifier>
-			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/secondsPerFrame</TokenIdentifier>
+			<Abstract type="html">seconds per frame</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			<Declaration>@property (nonatomic, readonly) CCTime secondsPerFrame</Declaration>
 			
 			
-			<Anchor>//api/name/tracking</Anchor>
+			<Anchor>//api/name/secondsPerFrame</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTouchInside:</TokenIdentifier>
-			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setResponderManager:</TokenIdentifier>
+			<Abstract type="html">Sets the touch manager</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			<Declaration>@property (nonatomic, strong) CCResponderManager *responderManager</Declaration>
 			
 			
-			<Anchor>//api/name/touchInside</Anchor>
+			<Anchor>//api/name/responderManager</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchInside</TokenIdentifier>
-			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/responderManager</TokenIdentifier>
+			<Abstract type="html">Sets the touch manager</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			<Declaration>@property (nonatomic, strong) CCResponderManager *responderManager</Declaration>
 			
 			
-			<Anchor>//api/name/touchInside</Anchor>
+			<Anchor>//api/name/responderManager</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/touchInside</TokenIdentifier>
-			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/responderManager</TokenIdentifier>
+			<Abstract type="html">Sets the touch manager</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			<Declaration>@property (nonatomic, strong) CCResponderManager *responderManager</Declaration>
 			
 			
-			<Anchor>//api/name/touchInside</Anchor>
+			<Anchor>//api/name/responderManager</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setBlock:</TokenIdentifier>
-			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setDelegate:</TokenIdentifier>
+			<Abstract type="html">CCDirector delegate. It shall implement the CCDirectorDelegate protocol</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) id&lt;CCDirectorDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/block</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/block</TokenIdentifier>
-			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/delegate</TokenIdentifier>
+			<Abstract type="html">CCDirector delegate. It shall implement the CCDirectorDelegate protocol</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) id&lt;CCDirectorDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/block</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCControl/block</TokenIdentifier>
-			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/delegate</TokenIdentifier>
+			<Abstract type="html">CCDirector delegate. It shall implement the CCDirectorDelegate protocol</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) id&lt;CCDirectorDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/block</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Sets a target and selector that should be called when an action is triggered by the control. Actions are generated when buttons are clicked, sliders are dragged etc. You can also set the action callback using the block property.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setContentScaleFactor:</TokenIdentifier>
+			<Abstract type="html">Content scaling factor. Sets the ratio of Cocos2D &quot;points&quot; to pixels. Default value is initalized from the content scale of the GL view used by the director.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)setTarget:(id)target selector:(SEL)selector</Declaration>
+			<Declaration>@property (nonatomic, assign) CGFloat contentScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/contentScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/contentScaleFactor</TokenIdentifier>
+			<Abstract type="html">Content scaling factor. Sets the ratio of Cocos2D &quot;points&quot; to pixels. Default value is initalized from the content scale of the GL view used by the director.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat contentScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/contentScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/contentScaleFactor</TokenIdentifier>
+			<Abstract type="html">Content scaling factor. Sets the ratio of Cocos2D &quot;points&quot; to pixels. Default value is initalized from the content scale of the GL view used by the director.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat contentScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/contentScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setUIScaleFactor:</TokenIdentifier>
+			<Abstract type="html">UI scaling factor, default value is 1. Positions and content sizes are scale by this factor if the position type is set to scale.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float UIScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/UIScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/UIScaleFactor</TokenIdentifier>
+			<Abstract type="html">UI scaling factor, default value is 1. Positions and content sizes are scale by this factor if the position type is set to scale.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float UIScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/UIScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/UIScaleFactor</TokenIdentifier>
+			<Abstract type="html">UI scaling factor, default value is 1. Positions and content sizes are scale by this factor if the position type is set to scale.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float UIScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/UIScaleFactor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setDesignSize:</TokenIdentifier>
+			<Abstract type="html">User definable value that is used for default contentSizes of many node types (CCScene, CCNodeColor, etc).
+Defaults to the view size.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize designSize</Declaration>
+			
+			
+			<Anchor>//api/name/designSize</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/designSize</TokenIdentifier>
+			<Abstract type="html">User definable value that is used for default contentSizes of many node types (CCScene, CCNodeColor, etc).
+Defaults to the view size.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize designSize</Declaration>
+			
+			
+			<Anchor>//api/name/designSize</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/designSize</TokenIdentifier>
+			<Abstract type="html">User definable value that is used for default contentSizes of many node types (CCScene, CCNodeColor, etc).
+Defaults to the view size.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize designSize</Declaration>
+			
+			
+			<Anchor>//api/name/designSize</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setProjectionMatrix:</TokenIdentifier>
+			<Abstract type="html">Projection matrix used for rendering.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) GLKMatrix4 projectionMatrix</Declaration>
+			
+			
+			<Anchor>//api/name/projectionMatrix</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/projectionMatrix</TokenIdentifier>
+			<Abstract type="html">Projection matrix used for rendering.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) GLKMatrix4 projectionMatrix</Declaration>
+			
+			
+			<Anchor>//api/name/projectionMatrix</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/projectionMatrix</TokenIdentifier>
+			<Abstract type="html">Projection matrix used for rendering.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) GLKMatrix4 projectionMatrix</Declaration>
+			
+			
+			<Anchor>//api/name/projectionMatrix</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/setGlobalShaderUniforms:</TokenIdentifier>
+			<Abstract type="html">The current global shader values values.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/globalShaderUniforms</TokenIdentifier>
+			<Abstract type="html">The current global shader values values.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCDirector/globalShaderUniforms</TokenIdentifier>
+			<Abstract type="html">The current global shader values values.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCDirector/sharedDirector</TokenIdentifier>
+			<Abstract type="html">returns a shared instance of the director</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>+ (CCDirector *)sharedDirector</Declaration>
+			
+			
+			<Anchor>//api/name/sharedDirector</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/viewSize</TokenIdentifier>
+			<Abstract type="html">returns the size of the OpenGL view in points</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (CGSize)viewSize</Declaration>
+			
+			
+			<Anchor>//api/name/viewSize</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/viewSizeInPixels</TokenIdentifier>
+			<Abstract type="html">returns the size of the OpenGL view in pixels.
+On Mac winSize and winSizeInPixels return the same value.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (CGSize)viewSizeInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/viewSizeInPixels</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/reshapeProjection:</TokenIdentifier>
+			<Abstract type="html">Changes the projection size.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)reshapeProjection:(CGSize)newWindowSize</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target object.</Abstract>
+					<Name>newWindowSize</Name>
+					<Abstract type="html">New projection size.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reshapeProjection:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/convertToGL:</TokenIdentifier>
+			<Abstract type="html">Converts a UIKit coordinate to an OpenGL coordinate.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToGL:(CGPoint)p</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>p</Name>
+					<Abstract type="html">Point to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Converted point.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToGL:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/convertToUI:</TokenIdentifier>
+			<Abstract type="html">Converts an OpenGL coordinate to a UIKit coordinate.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToUI:(CGPoint)p</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>p</Name>
+					<Abstract type="html">Point to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Converted point.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToUI:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/presentScene:</TokenIdentifier>
+			<Abstract type="html">Presents a new scene.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(CCScene *)scene</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">Scene to start.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentScene:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/presentScene:withTransition:</TokenIdentifier>
+			<Abstract type="html">Presents a new scene, with a transition.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(CCScene *)scene withTransition:(CCTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">Scene to start.</Abstract>
 				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">Selector to call on the target object.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">Transition to use.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setTarget:selector:</Anchor>
+			<Anchor>//api/name/presentScene:withTransition:</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/triggerAction</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. This method is called to trigger an action callback. E.g. CCButton calls this method when the button is tapped.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/runWithScene:</TokenIdentifier>
+			<Abstract type="html">Enters the Director&apos;s main loop with the given Scene.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)triggerAction</Declaration>
-			
-			
-			<Anchor>//api/name/triggerAction</Anchor>
-            <NodeRef refid="71"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/stateChanged</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. This method is called every time the control&apos;s state changes, it&apos;s default behavior is to call the needsLayout method.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
-			
-			<Declaration>- (void)stateChanged</Declaration>
-			
-			
-			<Anchor>//api/name/stateChanged</Anchor>
-            <NodeRef refid="71"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/needsLayout</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. This method should be called whenever the control needs to update its layout. It will force a call to the layout method at the beginning of the next draw cycle.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
-			
-			<Declaration>- (void)needsLayout</Declaration>
-			
-			
-			<Anchor>//api/name/needsLayout</Anchor>
-            <NodeRef refid="71"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/layout</TokenIdentifier>
-			<Abstract type="html">Used by sub classes. Override this method to do any layout needed by the component. This can include setting positions or sizes of child labels or sprites as well as the compontents contentSize.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
-			
-			<Declaration>- (void)layout</Declaration>
-			
-			
-			<Anchor>//api/name/layout</Anchor>
-            <NodeRef refid="71"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setValue:forKey:state:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Override this method if you are using custom properties and need to set them by name using the setValue:forKey method. This is needed for integration with editors such as SpriteBuilder. When overriding this method, make sure to call its super method if you cannot handle the key.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
-			
-			<Declaration>- (void)setValue:(id)value forKey:(NSString *)key state:(CCControlState)state</Declaration>
+			<Declaration>- (void)runWithScene:(CCScene *)scene</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The value to set.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">Scene to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runWithScene:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/pushScene:</TokenIdentifier>
+			<Abstract type="html">Suspends the execution of the running scene, pushing it on the stack of suspended scenes.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)pushScene:(CCScene *)scene</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">New scene to start.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushScene:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/popScene</TokenIdentifier>
+			<Abstract type="html">Pops out a scene from the queue.
+This scene will replace the running one.
+The running scene will be deleted. If there are no more scenes in the stack the execution is terminated.
+ONLY call it if there is a running scene.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)popScene</Declaration>
+			
+			
+			<Anchor>//api/name/popScene</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/popToRootScene</TokenIdentifier>
+			<Abstract type="html">Pops out all scenes from the queue until the root scene in the queue.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)popToRootScene</Declaration>
+			
+			
+			<Anchor>//api/name/popToRootScene</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/popToRootSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Pops out all scenes from the queue until the root scene in the queue, using a transition</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)popToRootSceneWithTransition:(CCTransition *)transition</Declaration>
+			
+			
+			<Anchor>//api/name/popToRootSceneWithTransition:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/replaceScene:</TokenIdentifier>
+			<Abstract type="html">Replaces the running scene with a new one. The running scene is terminated.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)replaceScene:(CCScene *)scene</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">New scene to start.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/replaceScene:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/replaceScene:withTransition:</TokenIdentifier>
+			<Abstract type="html">Presents a new scene by either starting first scene, or replacing the running
+Performs a transition between the outgoing and the incoming scene</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)replaceScene:(CCScene *)scene withTransition:(CCTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The incoming scene</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key to set the value for.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">The transition to perform</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/replaceScene:withTransition:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/pushScene:withTransition:</TokenIdentifier>
+			<Abstract type="html">Pushes the running scene onto the scene stack, and presents the incoming scene, using a transition</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+			
+			<Declaration>- (void)pushScene:(CCScene *)scene withTransition:(CCTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present</Abstract>
 				</Parameter><Parameter>
-					<Name>state</Name>
-					<Abstract type="html">The state to set the value for.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">The transition to use</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setValue:forKey:state:</Anchor>
+			<Anchor>//api/name/pushScene:withTransition:</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/valueForKey:state:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Override this method to return values of custom properties that are set by state.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/popSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Replaces the running scene, with the last scene pushed to the stack, using a transition</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/CCControl/setValue:forKey:state:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (id)valueForKey:(NSString *)key state:(CCControlState)state</Declaration>
+			<Declaration>- (void)popSceneWithTransition:(CCTransition *)transition</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key to retrieve the value for.</Abstract>
-				</Parameter><Parameter>
-					<Name>state</Name>
-					<Abstract type="html">The state to retrieve the value for.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">The transition to use</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the specified key and value or NULL if no such value exist.</Abstract></ReturnValue>
-			<Anchor>//api/name/valueForKey:state:</Anchor>
+			
+			<Anchor>//api/name/popSceneWithTransition:</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchEntered:withEvent:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a touch enters the component. By default this happes if the touch down is within the control, if the claimsUserEvents property is set to false this will also happen if the touch starts outside of the control.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/end</TokenIdentifier>
+			<Abstract type="html">Ends the execution, releases the running scene.
+It doesn&apos;t remove the OpenGL view from its parent. You have to do it manually.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)touchEntered:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>touch</Name>
-					<Abstract type="html">Touch that entered the component.</Abstract>
-				</Parameter><Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the touch.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)end</Declaration>
 			
-			<Anchor>//api/name/touchEntered:withEvent:</Anchor>
+			
+			<Anchor>//api/name/end</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchExited:withEvent:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a touch exits the component.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/pause</TokenIdentifier>
+			<Abstract type="html">Pauses the running scene.
+The running scene will be drawed but all scheduled timers will be paused
+While paused, the draw rate will be 4 FPS to reduce CPU consumption</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)touchExited:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>touch</Name>
-					<Abstract type="html">Touch that exited the component</Abstract>
-				</Parameter><Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the touch.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)pause</Declaration>
 			
-			<Anchor>//api/name/touchExited:withEvent:</Anchor>
+			
+			<Anchor>//api/name/pause</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchUpInside:withEvent:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a touch that started inside the component is ended inside the component. E.g. for CCButton, this triggers the buttons callback action.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/resume</TokenIdentifier>
+			<Abstract type="html">Resumes the paused scene
+The scheduled timers will be activated again.
+The &quot;delta time&quot; will be 0 (as if the game wasn&apos;t paused</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)touchUpInside:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>touch</Name>
-					<Abstract type="html">Touch that is released inside the component.</Abstract>
-				</Parameter><Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the touch.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)resume</Declaration>
 			
-			<Anchor>//api/name/touchUpInside:withEvent:</Anchor>
+			
+			<Anchor>//api/name/resume</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchUpOutside:withEvent:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a touch that started inside the component is ended outside the component. E.g. for CCButton, this doesn&apos;t trigger any callback action.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/stopAnimation</TokenIdentifier>
+			<Abstract type="html">Stops the animation. Nothing will be drawn. The main loop won&apos;t be triggered anymore.
+If you want to pause your animation call [pause] instead.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)touchUpOutside:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>touch</Name>
-					<Abstract type="html">Touch that is release outside of the component.</Abstract>
-				</Parameter><Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the touch.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)stopAnimation</Declaration>
 			
-			<Anchor>//api/name/touchUpOutside:withEvent:</Anchor>
+			
+			<Anchor>//api/name/stopAnimation</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseDownEntered:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a mouse down enters the component. By default this happes if the mouse down is within the control, if the claimsUserEvents property is set to false this will also happen if the mouse down starts outside of the control.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/startAnimation</TokenIdentifier>
+			<Abstract type="html">The main loop is triggered again.
+Call this function only if [stopAnimation] was called earlier</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)mouseDownEntered:(NSEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the mouse down.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)startAnimation</Declaration>
 			
-			<Anchor>//api/name/mouseDownEntered:</Anchor>
+			
+			<Anchor>//api/name/startAnimation</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseDownExited:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a mouse down exits the component.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/view</TokenIdentifier>
+			<Abstract type="html">returns the OpenGL view</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)mouseDownExited:(NSEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the mouse down.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (CCGLView *)view</Declaration>
 			
-			<Anchor>//api/name/mouseDownExited:</Anchor>
+			
+			<Anchor>//api/name/view</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseUpInside:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a mouse down that started inside the component is ended inside the component. E.g. for CCButton, this triggers the buttons callback action.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDirector/purgeCachedData</TokenIdentifier>
+			<Abstract type="html">Removes all the cocos2d data that was cached automatically.
+It will purge the CCTextureCache, CCLabelBMFont cache.
+IMPORTANT: The CCSpriteFrameCache won&apos;t be purged. If you want to purge it, you have to purge it manually.</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
 			
-			<Declaration>- (void)mouseUpInside:(NSEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the mouse up.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)purgeCachedData</Declaration>
 			
-			<Anchor>//api/name/mouseUpInside:</Anchor>
-            <NodeRef refid="71"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseUpOutside:</TokenIdentifier>
-			<Abstract type="html">Used by sub-classes. Called when a mouse down that started inside the component is ended outside the component. E.g. for CCButton, this doesn&apos;t trigger any callback action.</Abstract>
-			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
 			
-			<Declaration>- (void)mouseUpOutside:(NSEvent *)event</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>event</Name>
-					<Abstract type="html">Event associated with the mouse up.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/mouseUpOutside:</Anchor>
+			<Anchor>//api/name/purgeCachedData</Anchor>
             <NodeRef refid="71"/>
 		</Token>
 		

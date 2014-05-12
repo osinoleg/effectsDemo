@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CCControlState.html">
+	<File path="Constants/CCParticleSystemPositionType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CCControlState</TokenIdentifier>
-			<Abstract type="html">The possible states for a CCControl.</Abstract>
-			<DeclaredIn>CCControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CCParticleSystemPositionType</TokenIdentifier>
+			<Abstract type="html">Particle system position type.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
             
 			
 			<NodeRef refid="117"/>
@@ -14,41 +14,33 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCControlStateNormal</TokenIdentifier>
-            <Abstract type="html">The normal, or default state of a control — that is, enabled but neither selected nor highlighted.</Abstract>
-            <Declaration>CCControlStateNormal</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeFree</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the world and are unaffected by emitter repositioning.</Abstract>
+            <Declaration>CCParticleSystemPositionTypeFree</Declaration>
             
-            <DeclaredIn>CCControl.h</DeclaredIn>
-            
-            <NodeRef refid="117"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCControlStateHighlighted</TokenIdentifier>
-            <Abstract type="html">Highlighted state of a control. A control enters this state when a touch down, drag inside or drag enter is performed. You can retrieve and set this value through the highlighted property.</Abstract>
-            <Declaration>CCControlStateHighlighted</Declaration>
-            
-            <DeclaredIn>CCControl.h</DeclaredIn>
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
             
             <NodeRef refid="117"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCControlStateDisabled</TokenIdentifier>
-            <Abstract type="html">Disabled state of a control. This state indicates that the control is currently disabled. You can retrieve and set this value through the enabled property.</Abstract>
-            <Declaration>CCControlStateDisabled</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeRelative</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the world but will follow the emitter repositioning.
+	 Use case: Attach an emitter to an sprite, and you want that the emitter follows the sprite.
+	 </Abstract>
+            <Declaration>CCParticleSystemPositionTypeRelative</Declaration>
             
-            <DeclaredIn>CCControl.h</DeclaredIn>
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
             
             <NodeRef refid="117"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCControlStateSelected</TokenIdentifier>
-            <Abstract type="html">Selected state of a control. This state indicates that the control is currently selected. You can retrieve and set this value through the selected property.</Abstract>
-            <Declaration>CCControlStateSelected</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeGrouped</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the emitter and are translated along with it.</Abstract>
+            <Declaration>CCParticleSystemPositionTypeGrouped</Declaration>
             
-            <DeclaredIn>CCControl.h</DeclaredIn>
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
             
             <NodeRef refid="117"/>
         </Token>

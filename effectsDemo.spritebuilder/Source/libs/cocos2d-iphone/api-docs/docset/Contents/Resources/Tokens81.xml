@@ -280,8 +280,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CCNodeGradient/setCompressedInterpolation:</TokenIdentifier>
-			<Abstract type="html">	Deprecated in 3.1. All colors are correctly displayed across the node&apos;s rectangle.
-Default: YES.</Abstract>
+			<Abstract type="html">Whether or not the interpolation will be compressed in order to display all the colors of the gradient both in canonical and non canonical vectors.</Abstract>
 			<DeclaredIn>CCNodeColor.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) BOOL compressedInterpolation</Declaration>
@@ -293,8 +292,7 @@ Default: YES.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CCNodeGradient/compressedInterpolation</TokenIdentifier>
-			<Abstract type="html">	Deprecated in 3.1. All colors are correctly displayed across the node&apos;s rectangle.
-Default: YES.</Abstract>
+			<Abstract type="html">Whether or not the interpolation will be compressed in order to display all the colors of the gradient both in canonical and non canonical vectors.</Abstract>
 			<DeclaredIn>CCNodeColor.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) BOOL compressedInterpolation</Declaration>
@@ -306,8 +304,7 @@ Default: YES.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CCNodeGradient/compressedInterpolation</TokenIdentifier>
-			<Abstract type="html">	Deprecated in 3.1. All colors are correctly displayed across the node&apos;s rectangle.
-Default: YES.</Abstract>
+			<Abstract type="html">Whether or not the interpolation will be compressed in order to display all the colors of the gradient both in canonical and non canonical vectors.</Abstract>
 			<DeclaredIn>CCNodeColor.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) BOOL compressedInterpolation</Declaration>

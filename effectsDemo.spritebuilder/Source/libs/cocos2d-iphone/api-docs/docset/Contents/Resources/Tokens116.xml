@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CCRenderCommand.html">
+	<File path="Constants/CCParticleSystemMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CCRenderCommand</TokenIdentifier>
-			<Abstract type="html">Describes the behaviour for an command object that can be submitted to the queue of a
-CCRenderer in order to perform some drawing operations.</Abstract>
-			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CCParticleSystemMode</TokenIdentifier>
+			<Abstract type="html">Particle system mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
             
 			
 			<NodeRef refid="116"/>
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CCRenderCommand/invokeOnRenderer:</TokenIdentifier>
-			<Abstract type="html">Invokes this command on the specified renderer.</Abstract>
-			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
-			
-			<Declaration>- (void)invokeOnRenderer:(CCRenderer *)renderer</Declaration>
-			
-			
-			<Anchor>//api/name/invokeOnRenderer:</Anchor>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemModeGravity</TokenIdentifier>
+            <Abstract type="html">Gravity mode (A mode).</Abstract>
+            <Declaration>CCParticleSystemModeGravity</Declaration>
+            
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
             <NodeRef refid="116"/>
-		</Token>
-		
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemModeRadius</TokenIdentifier>
+            <Abstract type="html">Radius mode (B mode).</Abstract>
+            <Declaration>CCParticleSystemModeRadius</Declaration>
+            
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+            <NodeRef refid="116"/>
+        </Token>
         
 	</File>
 </Tokens>

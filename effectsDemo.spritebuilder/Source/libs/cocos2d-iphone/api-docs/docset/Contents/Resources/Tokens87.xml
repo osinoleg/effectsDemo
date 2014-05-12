@@ -324,6 +324,42 @@ It&apos;s idomatic to write &quot;return [pair ignore];&quot; if using this meth
             <NodeRef refid="87"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setArbiter:</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) cpArbiter *arbiter</Declaration>
+			
+			
+			<Anchor>//api/name/arbiter</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/arbiter</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) cpArbiter *arbiter</Declaration>
+			
+			
+			<Anchor>//api/name/arbiter</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/arbiter</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) cpArbiter *arbiter</Declaration>
+			
+			
+			<Anchor>//api/name/arbiter</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

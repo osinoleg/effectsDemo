@@ -1111,7 +1111,7 @@ Normally a body will fall alsleep on it&apos;s own, but you can manually force a
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setNode:</TokenIdentifier>
 			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
-			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
 			
@@ -1123,7 +1123,7 @@ Normally a body will fall alsleep on it&apos;s own, but you can manually force a
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/node</TokenIdentifier>
 			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
-			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
 			
@@ -1135,12 +1135,472 @@ Normally a body will fall alsleep on it&apos;s own, but you can manually force a
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/node</TokenIdentifier>
 			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
-			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
 			
 			
 			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">The CCPhysicsNode this body is added to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCPhysicsNode *physicsNode</Declaration>
+			
+			
+			<Anchor>//api/name/physicsNode</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/physicsNode</TokenIdentifier>
+			<Abstract type="html">The CCPhysicsNode this body is added to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCPhysicsNode *physicsNode</Declaration>
+			
+			
+			<Anchor>//api/name/physicsNode</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/physicsNode</TokenIdentifier>
+			<Abstract type="html">The CCPhysicsNode this body is added to.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCPhysicsNode *physicsNode</Declaration>
+			
+			
+			<Anchor>//api/name/physicsNode</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setIsRunning:</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/isRunning</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/isRunning</TokenIdentifier>
+			<Abstract type="html">Returns YES if the body is currently added to a physicsNode.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAbsolutePosition:</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint absolutePosition</Declaration>
+			
+			
+			<Anchor>//api/name/absolutePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/absolutePosition</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint absolutePosition</Declaration>
+			
+			
+			<Anchor>//api/name/absolutePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/absolutePosition</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint absolutePosition</Declaration>
+			
+			
+			<Anchor>//api/name/absolutePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAbsoluteRadians:</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat absoluteRadians</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteRadians</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/absoluteRadians</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat absoluteRadians</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteRadians</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/absoluteRadians</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat absoluteRadians</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteRadians</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setRelativePosition:</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint relativePosition</Declaration>
+			
+			
+			<Anchor>//api/name/relativePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/relativePosition</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint relativePosition</Declaration>
+			
+			
+			<Anchor>//api/name/relativePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/relativePosition</TokenIdentifier>
+			<Abstract type="html">The position of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint relativePosition</Declaration>
+			
+			
+			<Anchor>//api/name/relativePosition</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setRelativeRotation:</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat relativeRotation</Declaration>
+			
+			
+			<Anchor>//api/name/relativeRotation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/relativeRotation</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat relativeRotation</Declaration>
+			
+			
+			<Anchor>//api/name/relativeRotation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/relativeRotation</TokenIdentifier>
+			<Abstract type="html">The rotation of the body relative to its parent node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat relativeRotation</Declaration>
+			
+			
+			<Anchor>//api/name/relativeRotation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAbsoluteTransform:</TokenIdentifier>
+			<Abstract type="html">The transform of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGAffineTransform absoluteTransform</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTransform</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/absoluteTransform</TokenIdentifier>
+			<Abstract type="html">The transform of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGAffineTransform absoluteTransform</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTransform</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/absoluteTransform</TokenIdentifier>
+			<Abstract type="html">The transform of the body relative to the space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGAffineTransform absoluteTransform</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTransform</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setBody:</TokenIdentifier>
+			<Abstract type="html">Chipmunk Body.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/body</TokenIdentifier>
+			<Abstract type="html">Chipmunk Body.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/body</TokenIdentifier>
+			<Abstract type="html">Chipmunk Body.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setChipmunkObjects:</TokenIdentifier>
+			<Abstract type="html">Implements the ChipmunkObject protocol.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *chipmunkObjects</Declaration>
+			
+			
+			<Anchor>//api/name/chipmunkObjects</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/chipmunkObjects</TokenIdentifier>
+			<Abstract type="html">Implements the ChipmunkObject protocol.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *chipmunkObjects</Declaration>
+			
+			
+			<Anchor>//api/name/chipmunkObjects</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/chipmunkObjects</TokenIdentifier>
+			<Abstract type="html">Implements the ChipmunkObject protocol.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *chipmunkObjects</Declaration>
+			
+			
+			<Anchor>//api/name/chipmunkObjects</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setIsKinematicTransformDirty:</TokenIdentifier>
+			<Abstract type="html">Is static bodies transform dirty to animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isKinematicTransformDirty</Declaration>
+			
+			
+			<Anchor>//api/name/isKinematicTransformDirty</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/isKinematicTransformDirty</TokenIdentifier>
+			<Abstract type="html">Is static bodies transform dirty to animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isKinematicTransformDirty</Declaration>
+			
+			
+			<Anchor>//api/name/isKinematicTransformDirty</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/isKinematicTransformDirty</TokenIdentifier>
+			<Abstract type="html">Is static bodies transform dirty to animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isKinematicTransformDirty</Declaration>
+			
+			
+			<Anchor>//api/name/isKinematicTransformDirty</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/addJoint:</TokenIdentifier>
+			<Abstract type="html">Add joint to body.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)addJoint:(CCPhysicsJoint *)joint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>joint</Name>
+					<Abstract type="html">Physics joint to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addJoint:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/removeJoint:</TokenIdentifier>
+			<Abstract type="html">Remove joint from body.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)removeJoint:(CCPhysicsJoint *)joint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>joint</Name>
+					<Abstract type="html">Physics joint to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeJoint:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/willAddToPhysicsNode:nonRigidTransform:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)willAddToPhysicsNode:(CCPhysicsNode *)physics nonRigidTransform:(cpTransform)transform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter><Parameter>
+					<Name>transform</Name>
+					<Abstract type="html">Transform to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willAddToPhysicsNode:nonRigidTransform:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/didAddToPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)didAddToPhysicsNode:(CCPhysicsNode *)physics</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didAddToPhysicsNode:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/didRemoveFromPhysicsNode:</TokenIdentifier>
+			<Abstract type="html">Used for deferring collision type setup until there is access to the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)didRemoveFromPhysicsNode:(CCPhysicsNode *)physics</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>physics</Name>
+					<Abstract type="html">Physics node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didRemoveFromPhysicsNode:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/updateKinetics:</TokenIdentifier>
+			<Abstract type="html">For static bodies that are now in motion, update their kinetic properties.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (void)updateKinetics:(CCTime)delta</Declaration>
+			
+			
+			<Anchor>//api/name/updateKinetics:</Anchor>
             <NodeRef refid="86"/>
 		</Token>
 		

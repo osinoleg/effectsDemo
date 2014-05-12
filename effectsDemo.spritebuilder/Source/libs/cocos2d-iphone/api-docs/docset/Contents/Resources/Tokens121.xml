@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CCParticleSystemPositionType.html">
+	<File path="Constants/CCTexturePixelFormat.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CCParticleSystemPositionType</TokenIdentifier>
-			<Abstract type="html">Particle system position type.</Abstract>
-			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CCTexturePixelFormat</TokenIdentifier>
+			<Abstract type="html">Possible texture pixel formats</Abstract>
+			<DeclaredIn>CCTexture.h</DeclaredIn>
             
 			
 			<NodeRef refid="121"/>
@@ -14,33 +14,111 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeFree</TokenIdentifier>
-            <Abstract type="html">Living particles are attached to the world and are unaffected by emitter repositioning.</Abstract>
-            <Declaration>CCParticleSystemPositionTypeFree</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_RGBA8888</TokenIdentifier>
+            <Abstract type="html">! 32-bit texture: RGBA8888</Abstract>
+            <Declaration>CCTexturePixelFormat_RGBA8888</Declaration>
             
-            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
-            
-            <NodeRef refid="121"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeRelative</TokenIdentifier>
-            <Abstract type="html">Living particles are attached to the world but will follow the emitter repositioning.
-	 Use case: Attach an emitter to an sprite, and you want that the emitter follows the sprite.
-	 </Abstract>
-            <Declaration>CCParticleSystemPositionTypeRelative</Declaration>
-            
-            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            <DeclaredIn>CCTexture.h</DeclaredIn>
             
             <NodeRef refid="121"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeGrouped</TokenIdentifier>
-            <Abstract type="html">Living particles are attached to the emitter and are translated along with it.</Abstract>
-            <Declaration>CCParticleSystemPositionTypeGrouped</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_RGB888</TokenIdentifier>
+            <Abstract type="html">! 32-bit texture without Alpha channel. Don&apos;t use it.</Abstract>
+            <Declaration>CCTexturePixelFormat_RGB888</Declaration>
             
-            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_RGB565</TokenIdentifier>
+            <Abstract type="html">! 16-bit texture without Alpha channel</Abstract>
+            <Declaration>CCTexturePixelFormat_RGB565</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_A8</TokenIdentifier>
+            <Abstract type="html">! 8-bit textures used as masks</Abstract>
+            <Declaration>CCTexturePixelFormat_A8</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_I8</TokenIdentifier>
+            <Abstract type="html">! 8-bit intensity texture</Abstract>
+            <Declaration>CCTexturePixelFormat_I8</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_AI88</TokenIdentifier>
+            <Abstract type="html">! 16-bit textures used as masks</Abstract>
+            <Declaration>CCTexturePixelFormat_AI88</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_RGBA4444</TokenIdentifier>
+            <Abstract type="html">! 16-bit textures: RGBA4444</Abstract>
+            <Declaration>CCTexturePixelFormat_RGBA4444</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_RGB5A1</TokenIdentifier>
+            <Abstract type="html">! 16-bit textures: RGB5A1</Abstract>
+            <Declaration>CCTexturePixelFormat_RGB5A1</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_PVRTC4</TokenIdentifier>
+            <Abstract type="html">! 4-bit PVRTC-compressed texture: PVRTC4</Abstract>
+            <Declaration>CCTexturePixelFormat_PVRTC4</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_PVRTC2</TokenIdentifier>
+            <Abstract type="html">! 2-bit PVRTC-compressed texture: PVRTC2</Abstract>
+            <Declaration>CCTexturePixelFormat_PVRTC2</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
+            
+            <NodeRef refid="121"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTexturePixelFormat_Default</TokenIdentifier>
+            <Abstract type="html">! Default texture format: RGBA8888</Abstract>
+            <Declaration>CCTexturePixelFormat_Default</Declaration>
+            
+            <DeclaredIn>CCTexture.h</DeclaredIn>
             
             <NodeRef refid="121"/>
         </Token>

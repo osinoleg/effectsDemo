@@ -218,7 +218,7 @@ Defaults to 0.5 seconds.</Abstract>
 			<Abstract type="html">Find all CCPhysicsShapes within a certain distance of a point. The block is called once for each shape found.</Abstract>
 			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
 			
-			<Declaration>- (void)pointQueryAt:(CGPoint)point within:(CGFloat)radius block:(void ( ^ ) ( CCPhysicsShape *shape , CGPoint nearest , CGFloat distance ))block</Declaration>
+			<Declaration>- (void)pointQueryAt:(CGPoint)point within:(CGFloat)radius block:(BOOL ( ^ ) ( CCPhysicsShape *shape , CGPoint nearest , CGFloat distance ))block</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>point</Name>
@@ -242,7 +242,7 @@ Defaults to 0.5 seconds.</Abstract>
 The block is called once for each shape found.</Abstract>
 			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
 			
-			<Declaration>- (void)rayQueryFirstFrom:(CGPoint)start to:(CGPoint)end block:(void ( ^ ) ( CCPhysicsShape *shape , CGPoint point , CGPoint normal , CGFloat distance ))block</Declaration>
+			<Declaration>- (void)rayQueryFirstFrom:(CGPoint)start to:(CGPoint)end block:(BOOL ( ^ ) ( CCPhysicsShape *shape , CGPoint point , CGPoint normal , CGFloat distance ))block</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>start</Name>
@@ -266,7 +266,7 @@ The block is called once for each shape found.</Abstract>
 The block is called once for each shape found.</Abstract>
 			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
 			
-			<Declaration>- (void)rectQuery:(CGRect)rect block:(void ( ^ ) ( CCPhysicsShape *shape ))block</Declaration>
+			<Declaration>- (void)rectQuery:(CGRect)rect block:(BOOL ( ^ ) ( CCPhysicsShape *shape ))block</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>rect</Name>
@@ -278,6 +278,152 @@ The block is called once for each shape found.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/rectQuery:block:</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setSpace:</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkSpace *space</Declaration>
+			
+			
+			<Anchor>//api/name/space</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/space</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkSpace *space</Declaration>
+			
+			
+			<Anchor>//api/name/space</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/space</TokenIdentifier>
+			<Abstract type="html">Access to the underlying Objective-Chipmunk object.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ChipmunkSpace *space</Declaration>
+			
+			
+			<Anchor>//api/name/space</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setKineticNodes:</TokenIdentifier>
+			<Abstract type="html">List of nodes that are currently kinetic due to parent animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *kineticNodes</Declaration>
+			
+			
+			<Anchor>//api/name/kineticNodes</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/kineticNodes</TokenIdentifier>
+			<Abstract type="html">List of nodes that are currently kinetic due to parent animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *kineticNodes</Declaration>
+			
+			
+			<Anchor>//api/name/kineticNodes</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/kineticNodes</TokenIdentifier>
+			<Abstract type="html">List of nodes that are currently kinetic due to parent animations</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *kineticNodes</Declaration>
+			
+			
+			<Anchor>//api/name/kineticNodes</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/internString:</TokenIdentifier>
+			<Abstract type="html">Intern and copy a string to ensure it can be checked by reference
+Used for collision type identifiers by CCPhysics.
+Nil and @&quot;default&quot; both return the value nil.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)internString:(NSString *)string</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Intern string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">String.</Abstract></ReturnValue>
+			<Anchor>//api/name/internString:</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/indexForCategory:</TokenIdentifier>
+			<Abstract type="html">Retain and track a category identifier and return its index.
+Up to 32 categories can be tracked for a space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)indexForCategory:(NSString *)category</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">String category.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Category index.</Abstract></ReturnValue>
+			<Anchor>//api/name/indexForCategory:</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/bitmaskForCategories:</TokenIdentifier>
+			<Abstract type="html">Convert an array of NSStrings for collision category identifiers into a category bitmask.
+The categories are retained and assigned indexes.
+Up to 32 categories can be tracked for a space.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (cpBitmask)bitmaskForCategories:(NSArray *)categories</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>categories</Name>
+					<Abstract type="html">Array of categories.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Bitmask.</Abstract></ReturnValue>
+			<Anchor>//api/name/bitmaskForCategories:</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/categoriesForBitmask:</TokenIdentifier>
+			<Abstract type="html">Convert a cpBitmask value to an array of collision category strings.
+Ignores any bits that don&apos;t have a collision category assigned in the physics node.</Abstract>
+			<DeclaredIn>CCPhysics+ObjectiveChipmunk.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)categoriesForBitmask:(cpBitmask)categories</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>categories</Name>
+					<Abstract type="html">Category bitmask.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of collision categories.</Abstract></ReturnValue>
+			<Anchor>//api/name/categoriesForBitmask:</Anchor>
             <NodeRef refid="89"/>
 		</Token>
 		
