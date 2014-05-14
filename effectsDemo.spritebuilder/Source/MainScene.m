@@ -25,6 +25,9 @@
     CCSprite* _test2;
     
     CCEffectGlow* _glowEffect;
+    
+    CCEffectPixellate* _pixellateEffect;
+    CCTime _pixellateTimer;
 }
 
 
@@ -127,13 +130,13 @@
     [grassPlatform addChild:treeBase];
     
     CCSprite* grassPlatform2 = [CCSprite spriteWithImageNamed:@"ccbResources/floating_platform_grass_02.png"];
-    grassPlatform2.anchorPoint = ccp(0.0, 0.0);
-    grassPlatform2.position = ccp(0.8, 0.5);
+    grassPlatform2.anchorPoint = ccp(0.5, 0.5);
+    grassPlatform2.position = ccp(0.5, 0.5);
     grassPlatform2.positionType = CCPositionTypeNormalized;
 
     CCSprite* jellyTree = [CCSprite spriteWithImageNamed:@"ccbResources/bling_jellytree_1.png"];
-    jellyTree.anchorPoint = ccp(0.0, 0.0);
-    jellyTree.position = ccp(0.2, 0.6);
+    jellyTree.anchorPoint = ccp(0.5, 0.0);
+    jellyTree.position = ccp(0.5, 0.75);
     jellyTree.positionType = CCPositionTypeNormalized;
     [grassPlatform2 addChild:jellyTree];
 
@@ -143,7 +146,16 @@
     rainbow.scale = 6.0;
     rainbow.positionType = CCPositionTypeNormalized;
 
+    _pixellateEffect = [[CCEffectPixellate alloc] initWithPixelScale:0.01f];
+    
+    CCEffectNode *effectNode = [[CCEffectNode alloc] initWithWidth:256 height:256];
+    effectNode.positionType = CCPositionTypeNormalized;
+    effectNode.position = ccp(0.8, 0.5);
+    [effectNode addChild:grassPlatform2];
+    [effectNode addEffect:_pixellateEffect];
+    [self addChild:effectNode];
 
+    
 #ifdef ENABLE_BLOOM
     CGSize size = [[CCDirector sharedDirector] designSize];
     // Blend glow maps test
@@ -160,7 +172,6 @@
     // sky
     [_glowEffectNode addChild:_dirtPlatform];
     [_glowEffectNode addChild:grassPlatform];
-    [_glowEffectNode addChild:grassPlatform2];
     [_glowEffectNode addChild:rainbow];
     
     _glowEffect = [CCEffectGlow effectWithBlurStrength:0.001f];
@@ -182,7 +193,6 @@
     // sky
     [self addChild:_dirtPlatform];
     [self addChild:grassPlatform];
-    [self addChild:grassPlatform2];
     [self addChild:rainbow];
 #endif
     
@@ -236,6 +246,16 @@
         }
     }
 #endif
+    
+    static const float kPixellateFrequency = 0.5f;
+    static const float kPixellateMinScale = 0.001f;
+    static const float kPixellateMaxScale = 0.01f;
+
+    // Feed the accumulated time value into sinf and adjust the range
+    // from -1..1 to 0..1 to make a cycling lerp value.
+    _pixellateTimer += interval;
+    float lerp = (sinf(kPixellateFrequency * _pixellateTimer) + 1.0f) * 0.5f;
+    _pixellateEffect.pixelScale = kPixellateMinScale * lerp + kPixellateMaxScale * (1.0f - lerp);
 }
 
 #pragma mark touches
