@@ -23,6 +23,8 @@
  * THE SOFTWARE.
  */
 
+//#define PONG
+
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
@@ -59,7 +61,11 @@
 
 - (CCScene*) startScene
 {
+#ifdef PONG
+    return [CCBReader loadAsScene:@"PongScene"];
+#else
     return [CCBReader loadAsScene:@"MainScene"];
+#endif
 }
 
 @end
