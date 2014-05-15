@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-//#define PONG
+#define PONG
 
 #import "cocos2d.h"
 
